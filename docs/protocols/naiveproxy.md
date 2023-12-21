@@ -58,3 +58,5 @@ sing-box 提供了 Näive 入站的实现，和官方客户端的不同在于，
 ```
 
 注意设置 `insecure-concurrency` 不是必须的。大于 1 的 `insecure-concurrency` 值有助于改善在高丢包环境下的体验，但是会**降低安全性**，见 [文档](https://github.com/klzgrad/naiveproxy/blob/master/USAGE.txt)。
+
+官方客户端和 sing-box 也支持以 QUIC 而非 HTTPS 连接（即把 `https://` 改为 `quic://`），但在笔者的环境下不通。
