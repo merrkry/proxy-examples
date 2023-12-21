@@ -14,7 +14,7 @@
   - [ ] TUIC
   - [ ] ShadowTLS
   - [ ] VLESS（REALITY / 套 CDN）
-  - [-] [Naiveproxy](./docs/protocols/naiveproxy.md)
+  - [x] [Naiveproxy](./docs/protocols/naiveproxy.md)
 - 笔记
   - [ ] 协议选择
   - [ ] 内核参数
