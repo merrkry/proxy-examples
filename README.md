@@ -14,12 +14,12 @@
   - [ ] TUIC
   - [ ] ShadowTLS
   - [ ] VLESS（REALITY / 套 CDN）
-  - [ ] Naiveproxy
+  - [-] [Naiveproxy](./docs/protocols/naiveproxy.md)
 - 笔记
   - [ ] 协议选择
   - [ ] 内核参数
   - [ ] BBR & TCP-Brutal
-  - [ ] 多路复用
+  - [ ] TLS in TLS、多路复用与填充
   - [ ] QoS
   - [ ] 线路
   - [ ] WARP
