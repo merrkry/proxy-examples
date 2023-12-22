@@ -3,6 +3,7 @@
 - 基于 QUIC，实现连接迁移、多路复用等功能
 - 端口跳跃，避免 QoS
 - 独有的 Brutal 流控
+- HTTP/3 伪装能力
 
 ## 服务端配置
 
@@ -11,7 +12,7 @@
 {
   "type": "hysteria2",
   "listen": "::",
-  "listen_port": ,
+  "listen_port": 443,
   "users": [
     {
       "password": ""
