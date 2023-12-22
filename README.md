@@ -13,6 +13,8 @@
 
 [TUIC](/docs/protocols/tuic.md)
 
+[ShadowTLS](/docs/protocols/shadowtls.md)
+
 [Näiveproxy](/docs/protocols/naiveproxy.md)
 
 [Brutal](/docs/brutal.md)
@@ -22,7 +24,7 @@
 - 常用代理协议的配置
   - [x] Hysteria 2
   - [x] TUIC
-  - [ ] ShadowTLS
+  - [x] ShadowTLS
   - [ ] VLESS（REALITY / 套 CDN）
   - [x] Näiveproxy
 - 笔记
