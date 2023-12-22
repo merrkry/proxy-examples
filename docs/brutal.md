@@ -1,6 +1,6 @@
 # Brutal
 
-Hysteria 协议发明的拥塞控制算法，用于 Hysteria 系列协议的 QUIC 拥塞控制，后来移植到 TCP（[TCP Brutal](https://github.com/apernet/tcp-brutal/blob/master/README.zh.md)）。通过一定程度上无视丢包率，按照**固定速率**发包和重传来提高速度，尤其是在质量非常差的线路上。具体介绍见 [Hysteria 是多倍发包吗？](https://v2.hysteria.network/zh/docs/misc/Hysteria-Brutal/)。
+Hysteria 协议发明的拥塞控制算法，用于 Hysteria 系列协议的 QUIC 拥塞控制，后来移植到 TCP（[TCP Brutal](https://github.com/apernet/tcp-brutal/blob/master/README.zh.md)）。通过一定程度上无视丢包率，按照**固定速率**发包和重传来提高速度，尤其适用于质量非常差的线路。具体介绍见 [Hysteria 是多倍发包吗？](https://v2.hysteria.network/zh/docs/misc/Hysteria-Brutal/)。
 
 Brutal 的实际性能**非常依赖于正确的带宽设置**。过高的值没有加速效果，只会徒增延迟。建议你从实际带宽 * 0.8 开始测试，逐渐降低。
 
