@@ -10,7 +10,7 @@
 ## TODO
 
 - 常用代理协议的配置
-  - [ ] Hysteria 2
+  - [x] Hysteria 2
   - [ ] TUIC
   - [ ] ShadowTLS
   - [ ] VLESS（REALITY / 套 CDN）
