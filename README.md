@@ -5,7 +5,7 @@
 或许也包含一些笔记。
 
 - Clash.Meta 客户端
-- sing-box 服务端
+- sing-box 服务端/客户端
 
 ## ToC
 

@@ -54,4 +54,22 @@
   udp-over-stream-version: 2
 ```
 
+```json
+// sing-box
+{
+  "tag": "",
+  "type": "tuic",
+  "server": "",
+  "server_port": 9443,
+  "uuid": "",
+  "password": "",
+  "congestion_control": "bbr",
+  "tls": {
+    "enabled": true,
+    "server_name": "",
+    "alpn": ["h3"]
+  }
+}
+```
+
 这里开启了 sing-box 和 Clash.Meta 的[私有扩展](https://sing-box.sagernet.org/zh/configuration/outbound/tuic/#udp_over_stream)：`udp-over-stream`（sing-box 服务端会自适应这个配置）。旨在提供更好的 UDP 处理能力，类似 [Juicity 对 TUIC 的改进](https://github.com/juicity/juicity/blob/main/docs/spec_en.md#protocol-features)。
