@@ -54,3 +54,52 @@ QUIC 支持**连接迁移**，这意味着我们可以随时改变连接端口�
 我们可以利用 Clash.Meta 的**负载均衡**策略组，间接实现少量端口的跳跃。
 
 > 待施工
+
+
+
+```
+   - &hysteria2
+    name: "VMISS Hysteria 2 p1"
+    type: hysteria2
+    server: 
+    port: 443
+    password: 
+    alpn: [h3]
+  - <<: *hysteria2
+    name: "VMISS Hysteria 2 p2"
+    port: 20000
+  - <<: *hysteria2
+    name: "VMISS Hysteria 2 p3"
+    port: 20001
+  - <<: *hysteria2
+    name: "VMISS Hysteria 2 p4"
+    port: 20002
+  - <<: *hysteria2
+    name: "VMISS Hysteria 2 p5"
+    port: 20003
+  - <<: *hysteria2
+    name: "VMISS Hysteria 2 p6"
+    port: 20004
+  - <<: *hysteria2
+    name: "VMISS Hysteria 2 p7"
+    port: 20005
+  - <<: *hysteria2
+    name: "VMISS Hysteria 2 p8"
+    port: 20006
+ 
+ - name: "VMISS Hysteria 2"
+    type: load-balance
+    proxies:
+      - VMISS Hysteria 2 p1
+      - VMISS Hysteria 2 p2
+      - VMISS Hysteria 2 p3
+      - VMISS Hysteria 2 p4
+      - VMISS Hysteria 2 p5
+      - VMISS Hysteria 2 p6
+      - VMISS Hysteria 2 p7
+      - VMISS Hysteria 2 p8
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    strategy: sticky-sessions # consistent-hashing, round-robin
+```
+
